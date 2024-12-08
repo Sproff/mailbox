@@ -1,0 +1,18 @@
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "semi": false,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "singleQuote": false,
+  "jsxBracketSameLine": false,
+  "importOrder": [
+    "^@mbl-lib/(.*)$",
+    "^@mbl-modules/(.*)$",
+    "^@mbl-types/(.*)$",
+    "^@mbl-ui/(.*)$",
+    "^@mbl-utils/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

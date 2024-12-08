@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&display=swap");
+
+html,
+body {
+  font-family: "Mona Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(169, 180, 193) inset !important;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(182, 182, 182, 0.2) transparent;
+  height: 0.25rem;
+  width: 0.25rem;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(182, 182, 182, 0.2);
+  border-radius: 0.1rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
