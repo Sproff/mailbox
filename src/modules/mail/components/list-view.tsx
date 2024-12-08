@@ -24,6 +24,7 @@ export const ListView = () => {
       <div className="p-1">
         <Input
           {...{
+            datatestid: "search-input",
             placeholder: "Search",
             type: "text",
             onChange: (e) => setSearchQuery(e.target.value),
