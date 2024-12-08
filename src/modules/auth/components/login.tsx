@@ -120,6 +120,7 @@ export const LoginForm = () => {
 
           <div>
             <Button
+              datatestId="login-btn"
               size="md"
               look="green"
               className="w-full"

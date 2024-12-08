@@ -36,4 +36,16 @@ describe("Login Component", () => {
 
     expect(inputField).toHaveValue("Passkey123")
   })
+
+  it("renders a login button and handles click event", () => {
+    render(<LoginForm />)
+
+    const loginButton = screen.getByTestId("login-btn")
+
+    expect(loginButton).toBeInTheDocument()
+
+    fireEvent.click(loginButton)
+
+    expect(loginButton).toBeDisabled()
+  })
 })
