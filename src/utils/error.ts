@@ -15,6 +15,7 @@ export const handleAxiosError = async (error: AxiosError) => {
 
   const handleUnauthorized = () => {
     LS_KEYS.forEach((key) => removeFromLS(key))
+    window.location.reload()
   }
 
   if (response && [401, 403].includes(response.status)) {
